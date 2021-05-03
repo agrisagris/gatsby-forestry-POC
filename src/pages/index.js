@@ -1,11 +1,11 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <Seo title="Home" />
     <h1>Hi people</h1>
@@ -19,11 +19,31 @@ const IndexPage = () => (
       alt="A Gatsby astronaut"
       style={{ marginBottom: `1.45rem` }}
     />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
+    {data?.allMarkdownRemark?.edges?.map(file => {
+      return (
+        <div key={file?.node?.id}>
+          <h3>{file?.node?.frontmatter?.title}</h3>
+          <p>{file?.node?.frontmatter?.url}</p>
+        </div>
+      )
+    })}
   </Layout>
 )
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            url
+          }
+        }
+      }
+    }
+  }
+`
