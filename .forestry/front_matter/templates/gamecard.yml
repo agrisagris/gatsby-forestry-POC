@@ -12,3 +12,5 @@ fields:
   config:
     required: false
   label: url
+pages:
+- games/valheim.md
