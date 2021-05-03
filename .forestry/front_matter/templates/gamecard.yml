@@ -13,4 +13,5 @@ fields:
     required: false
   label: url
 pages:
+- games/cyberpunk.md
 - games/valheim.md
