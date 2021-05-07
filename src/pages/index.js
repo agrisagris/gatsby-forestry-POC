@@ -5,7 +5,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({ data }) => {
+  console.log("d", data);
+  return(
   <Layout>
     <Seo title="Home" />
     <h1>Hi people</h1>
@@ -24,12 +26,14 @@ const IndexPage = ({ data }) => (
         <div key={file?.node?.id}>
           <h3>{file?.node?.frontmatter?.title}</h3>
           <p>{file?.node?.frontmatter?.url}</p>
+          <p>aa{file?.node?.frontmatter?.desc}</p>
+          <div dangerouslySetInnerHTML={{__html: `${file?.node?.frontmatter?.desc}`}} />
         </div>
       )
     })}
   </Layout>
 )
-
+  }
 export default IndexPage
 
 export const pageQuery = graphql`
@@ -41,6 +45,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             url
+            desc
           }
         }
       }
