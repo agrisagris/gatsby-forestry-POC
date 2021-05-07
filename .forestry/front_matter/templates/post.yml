@@ -1,4 +1,18 @@
 ---
 label: Post
 hide_body: false
-fields: []
+fields:
+- name: asfasf
+  type: text
+  config:
+    required: false
+  label: asfasf
+- name: afasfasf
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Afasfasf
