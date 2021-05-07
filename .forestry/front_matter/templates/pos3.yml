@@ -11,3 +11,5 @@ fields:
     schema:
       format: html-blocks
   label: desc
+pages:
+- games/aaa.md
