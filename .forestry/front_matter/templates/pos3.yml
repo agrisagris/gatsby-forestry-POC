@@ -1,4 +1,13 @@
 ---
 label: Pos3
 hide_body: false
-fields: []
+fields:
+- name: desc
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: desc
