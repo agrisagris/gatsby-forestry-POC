@@ -12,4 +12,5 @@ fields:
       format: html-blocks
   label: desc
 pages:
+- games/Post5.md
 - games/aaa.md
