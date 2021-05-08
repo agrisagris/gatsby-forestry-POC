@@ -28,6 +28,7 @@ const IndexPage = ({ data }) => {
           <p>{file?.node?.frontmatter?.url}</p>
           <p>aa{file?.node?.frontmatter?.desc}</p>
           <div dangerouslySetInnerHTML={{__html: `${file?.node?.frontmatter?.desc}`}} />
+          <div dangerouslySetInnerHTML={{__html: `${file?.node?.html}`}} />
         </div>
       )
     })}
@@ -47,6 +48,7 @@ export const pageQuery = graphql`
             url
             desc
           }
+          html
         }
       }
     }
