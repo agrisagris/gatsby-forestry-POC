@@ -15,5 +15,4 @@ The other alternative is more conservative and comes from a humble place of curi
 
 Even before the hypothesis there is a method to the understanding of the problem that is scientific. The user scientist collects a variety of data and interviews to understand the user from many angles.
 
-  
-![](https://lh5.googleusercontent.com/bo3lgeWWadguLwbu123988mMRaZ-1k3v83E0J3zsvjpOmAFtccaJH0hd1GjFAvwkNW-yBrryJog0GssZvdvVAbWg7r7jiiugdfVZ9SCRYerYAnYhrlgd13UpsFysnQ4ISnTztfiLJwY =374px;x374px;)
+![](https://i.pinimg.com/736x/e1/9e/ed/e19eeda158a921bb7b20c8e8b7a6ea3c.jpg)
