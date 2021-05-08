@@ -16,3 +16,5 @@ fields:
     schema:
       format: markdown
   label: Desc
+pages:
+- games/user-science.md
